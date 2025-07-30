@@ -66,70 +66,8 @@ nav li:hover a {
     color: #33FF00;
 }
 
-#tournament-main-info {
-    margin: 40px;
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-    justify-content: center;
-}
-
 #cta-register-info span {
     font-weight: bold;
-}
-
-#cta-register-info {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 5px grey;
-    padding: 20px;
-    flex: 1;
-    max-width: none;
-    min-width: 250px;
-}
-
-#btn-register {
-    background-color: #008A0C;
-    color: white;
-    font-weight: bold;
-    padding: 15px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin: 15px;
-}
-
-#btn-register:hover {
-    background-color: #006308;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-#cta-register-info h2 {
-    margin: 0;
-}
-
-#color-cards {
-    display: flex;
-    flex: 3;
-    gap: 20px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-    height: auto;
 }
 
 .yellow-card {
@@ -138,4 +76,70 @@ nav li:hover a {
 
 .red-card {
     background-color: #FF6B6B;
+}
+
+#tournament-main-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    gap: 20px;
+    min-height: 35vh;
+    justify-content: space-between;
+    height: auto;
+}
+
+#cta-register-info {
+    flex-grow: 1;
+    border: 1px solid rgb(190, 190, 190);
+    text-align: center;
+    padding: 0px 20px;
+    max-width: 600px;
+    box-shadow: 2px 2px 5px rgb(193, 193, 193);
+}
+
+#color-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.card {
+    padding: 5px 20px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgb(193, 193, 193)
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card h2, h3 {
+    margin: 5px 0;
+}
+
+.card h2{
+    font-size: 30px;
+}
+
+#btn-register {
+    display: inline-block;
+    background-color: #00a50e;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#btn-register:hover {
+    background-color: #007e0a;
+}
+
+#cta-register-info p {
+    margin: 10px;
 }
