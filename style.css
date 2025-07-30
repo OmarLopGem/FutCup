@@ -1,0 +1,141 @@
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+header {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    background-color: #363636;
+    padding: 0;
+}
+
+.nav-bar li {
+    padding: 10px 15px;
+}
+
+.nav-bar li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+nav li:hover a {
+    color: black;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero-image {
+    background-image: url('imgs/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+
+    height: 60vh;
+    padding: 40px;
+}
+
+#hero-image h1 {
+    margin: 0;
+}
+
+#hero-image span {
+    color: #33FF00;
+}
+
+#tournament-main-info {
+    margin: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#cta-register-info span {
+    font-weight: bold;
+}
+
+#cta-register-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px grey;
+    padding: 20px;
+    flex: 1;
+    max-width: none;
+    min-width: 250px;
+}
+
+#btn-register {
+    background-color: #008A0C;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 15px;
+}
+
+#btn-register:hover {
+    background-color: #006308;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#cta-register-info h2 {
+    margin: 0;
+}
+
+#color-cards {
+    display: flex;
+    flex: 3;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+    height: auto;
+}
+
+.yellow-card {
+    background-color: #FFE25F;
+}
+
+.red-card {
+    background-color: #FF6B6B;
+}
