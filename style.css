@@ -8,6 +8,7 @@ header {
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 2px 2px 5px rgb(171, 171, 171);
 }
 
 .logo {
@@ -142,4 +143,26 @@ nav li:hover a {
 
 #cta-register-info p {
     margin: 10px;
+}
+
+footer {
+    background-color: #008A0C;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.footer-info a{
+    color: white;
 }
