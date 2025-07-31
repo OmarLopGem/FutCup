@@ -335,3 +335,90 @@ footer {
     }
 
 }
+/* wrapper for the registration block */
+.registration-container {
+    max-width: 600px; 
+    margin: 60px auto;
+    background-color: #f7f7f7; 
+    padding: 30px 30px 35px; /* padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+}
+
+/* Main heading */
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px; 
+}
+
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #333333; 
+    font-weight: 500; 
+}
+
+/* The actual form section */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* simple spacing between elements */
+}
+
+    /* Label styles */
+    .registration-form label {
+        font-weight: bold;
+        margin-bottom: 6px; /* maybe too much, let's see */
+    }
+
+    /* Input fields and selects */
+    .registration-form input,
+    .registration-form select {
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        font-size: 0.95rem;
+        
+    }
+
+/* Checkbox section */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 15px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+    /* Hover effect */
+    .btn-submit:hover {
+        background-color: #218838;
+    }
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+    .registration-container {
+        margin: 20px; /* tighter margins for small screens */
+        padding: 20px; /* adjusted padding to fit better */
+        box-shadow: none; 
+    }
+
+    .page-title {
+        font-size: 1.6rem; 
+    }
+}

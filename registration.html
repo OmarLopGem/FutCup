@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutCup - Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo">FUT <span>CUP</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="statistics.html">Stats</a></li> 
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a class="active" href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="registration-container">
+        <h1 class="page-title">Register Your Team</h1>
+        <p class="subtitle">Get ready for the top soccer tournament in KW!</p>
+
+        <!-- Registration form -->
+        <form class="registration-form" action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="team">Team Name:</label>
+            <input type="text" id="team" name="team" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="age">Age (12+):</label>
+            <input type="number" id="age" name="age" min="12" required>
+
+            <label for="position">Playing Position:</label>
+            <select id="position" name="position" required>
+                <option value="">-- choose one --</option>
+                <option>Goalkeeper</option>
+                <option>Defender</option>
+                <option>Midfielder</option>
+                <option>Forward</option>
+            </select>
+
+            <label for="category">Team Type:</label>
+            <select id="category" name="category" required>
+                <option value="">-- choose one --</option>
+                <option>Amateur</option>
+                <option>Pro</option>
+                <option>Mixed</option>
+            </select>
+
+            <label for="day">Preferred Day:</label>
+            <select id="day" name="day" required>
+                <option value="">-- choose one --</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+
+         
+            <label class="checkbox">
+                <input type="checkbox" required> I agree to the tournament rules and conditions
+            </label>
+
+            
+            <button type="submit" class="btn-submit">Submit Registration</button>
+        </form>
+    </main>
+
+    <footer>
+        
+        <p>&copy; 2025 FutCup. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
