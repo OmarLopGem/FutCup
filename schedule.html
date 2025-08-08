@@ -1,85 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="Futcup - Schedule" />
-  <title>Futcup | Schedule</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Futcup - Match Schedule" name="title"/>
+    <title>Futcup | Schedule</title>
+    <!-- Google Fonts for h1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <div class="container">
-      <h1>Soccer Tournament 2025</h1>
-      <nav>
-        <ul>
-         <li><a href="index.html">Home Page</a></li>
-         <li><a href="statistics.html">Statistics</a></li>
-         <li><a href="shedule.html">Schedule</a></li>
-         <li><a href="">Registration</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-title">
-      <h2>Match Schedule</h2>
-      <p>Check out the full match schedule for this year’s tournament.</p>
-    </section>
-
-    <section class="schedule-table">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Team A</th>
-            <th>Team B</th>
-            <th>Venue</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Aug 10</td>
-            <td>10:00 AM</td>
-            <td>Lions</td>
-            <td>Tigers</td>
-            <td>Stadium A</td>
-          </tr>
-          <tr>
-            <td>Aug 11</td>
-            <td>1:00 PM</td>
-            <td>Falcons</td>
-            <td>Wolves</td>
-            <td>Stadium B</td>
-          </tr>
-          <tr>
-            <td>Aug 12</td>
-            <td>4:00 PM</td>
-            <td>Sharks</td>
-            <td>Eagles</td>
-            <td>Stadium A</td>
-          </tr>
-          <tr>
-            <td>Aug 13</td>
-            <td>11:00 AM</td>
-            <td>Panthers</td>
-            <td>Rhinos</td>
-            <td>Stadium C</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Futcup. All rights reserved.</p>
-    </div>
-  </footer>
-
+    <header>
+        <div class="container nav-container">
+            <h1 class="main-heading">Soccer Tournament 2025</h1>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a aria-current="page" href="shedule.html">Schedule</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-title">
+            <h2>Match Schedule</h2>
+            <p>
+                Check out the full match schedule for this year’s tournament. <br/>
+                All matches held at local stadiums. See table for details.
+            </p>
+        </section>
+        <section class="schedule-table-section">
+            <figure>
+                <img alt="Soccer players in action" class="schedule-banner-img" src="imgs/schedule-banner.jpg"/>
+                <figcaption class="visually-hidden">Soccer players in action for the tournament schedule</figcaption>
+            </figure>
+            <div class="table-responsive">
+                <table aria-describedby="schedule-caption" id="match-schedule">
+                    <caption id="schedule-caption"><strong>Soccer Tournament 2025 - Full Match Schedule</strong></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Team A</th>
+                            <th scope="col">Team B</th>
+                            <th scope="col">Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Aug 10</td><td>10:00 AM</td><td>Avengers Team</td><td>Thanos Soccer Team</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 11</td><td>1:00 PM</td><td>Guardians of the Galaxy</td><td>Dr. Doom Team</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 12</td><td>4:00 PM</td><td>Dormamu FC</td><td>Ultron FC</td><td>Stadium C</td></tr>
+                        <tr><td>Aug 13</td><td>10:00 AM</td><td>Fantastic 4</td><td>Thanos Soccer Team</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 14</td><td>1:00 PM</td><td>Avengers Team</td><td>Ultron FC</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 15</td><td>4:00 PM</td><td>Guardians of the Galaxy</td><td>Dormamu FC</td><td>Stadium C</td></tr>
+                        <tr><td>Aug 16</td><td>10:00 AM</td><td>Fantastic 4</td><td>Dr. Doom Team</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 17</td><td>1:00 PM</td><td>Thanos Soccer Team</td><td>Ultron FC</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 18</td><td>4:00 PM</td><td>Avengers Team</td><td>Guardians of the Galaxy</td><td>Stadium C</td></tr>
+                        <tr><td>Aug 19</td><td>10:00 AM</td><td>Fantastic 4</td><td>Ultron FC</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 20</td><td>1:00 PM</td><td>Dr. Doom Team</td><td>Dormamu FC</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 21</td><td>4:00 PM</td><td>Thanos Soccer Team</td><td>Guardians of the Galaxy</td><td>Stadium C</td></tr>
+                        <tr><td>Aug 22</td><td>10:00 AM</td><td>Fantastic 4</td><td>Dormamu FC</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 23</td><td>1:00 PM</td><td>Ultron FC</td><td>Guardians of the Galaxy</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 24</td><td>4:00 PM</td><td>Dr. Doom Team</td><td>Avengers Team</td><td>Stadium C</td></tr>
+                        <tr><td>Aug 25</td><td>10:00 AM</td><td>Fantastic 4</td><td>Guardians of the Galaxy</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 26</td><td>1:00 PM</td><td>Dormamu FC</td><td>Avengers Team</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 27</td><td>4:00 PM</td><td>Dr. Doom Team</td><td>Thanos Soccer Team</td><td>Stadium C</td></tr>
+                        <tr><td>Aug 28</td><td>10:00 AM</td><td>Fantastic 4</td><td>Avengers Team</td><td>Stadium A</td></tr>
+                        <tr><td>Aug 29</td><td>1:00 PM</td><td>Dormamu FC</td><td>Thanos Soccer Team</td><td>Stadium B</td></tr>
+                        <tr><td>Aug 30</td><td>4:00 PM</td><td>Ultron FC</td><td>Dr. Doom Team</td><td>Stadium C</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="schedule-facts">
+                <h3>Fun Tournament Facts</h3>
+                <ul>
+                    <li>All matches are refereed by certified officials.</li>
+                    <li>Half-time shows feature local talent and food trucks.</li>
+                    <li>Winners receive medals and team trophies!</li>
+                    <li>Special guest appearance by a local soccer legend on Aug 13!</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2025 Futcup. All rights reserved. | Designed by Group 4</p>
+        </div>
+    </footer>
 </body>
-</html>
+</html></div>
