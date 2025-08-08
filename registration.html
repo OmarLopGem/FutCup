@@ -1,73 +1,108 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<!-- Responsiveness -->
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FutCup - Sign Up Page</title>
-<link href="style.css" rel="stylesheet"/>
-<!-- Google font -->
+    <meta charset="UTF-8">
 
-<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap" rel="stylesheet"/></head>
+    <!-- Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutCup - Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts (matching index.html) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+
 <body>
-<header>
-<a href="index.html"><img alt="Logo of Fut Cup" class="logo" src="imgs/logo.jpg"/></a>
-<nav>
-<ul class="nav-bar">
-<li><a href="index.html">Home</a></li>
-<li><a href="statistics.html">Stats</a></li>
-<li><a href="schedule.html">Schedule</a></li>
-<li><a class="active" href="registration.html">Register</a></li>
-</ul>
-</nav>
-</header>
-<main class="registration-container">
-<h1 class="page-title">Register Your Team</h1>
-<p class="subtitle">Get ready for the top soccer tournament in KW!</p>
-<!-- Registration form -->
-<form action="#" class="registration-form" method="post">
-<label for="fname">First Name:</label>
-<input id="fname" name="fname" required="" type="text"/>
-<label for="lname">Last Name:</label>
-<input id="lname" name="lname" required="" type="text"/>
-<label for="team">Team Name:</label>
-<input id="team" name="team" required="" type="text"/>
-<label for="email">Email:</label>
-<input id="email" name="email" required="" type="email"/>
-<label for="phone">Phone Number:</label>
-<input id="phone" name="phone" required="" type="tel"/>
-<label for="age">Age (12+):</label>
-<input id="age" min="12" name="age" required="" type="number"/>
-<label for="position">Playing Position:</label>
-<select id="position" name="position" required="">
-<option value="">-- choose one --</option>
-<option>Goalkeeper</option>
-<option>Defender</option>
-<option>Midfielder</option>
-<option>Forward</option>
-</select>
-<label for="category">Team Type:</label>
-<select id="category" name="category" required="">
-<option value="">-- choose one --</option>
-<option>Amateur</option>
-<option>Pro</option>
-<option>Mixed</option>
-</select>
-<label for="day">Preferred Day:</label>
-<select id="day" name="day" required="">
-<option value="">-- choose one --</option>
-<option>Saturday</option>
-<option>Sunday</option>
-</select>
-<label class="checkbox">
-<input required="" type="checkbox"/> I agree to the tournament rules and conditions
+    <header>
+        <a href="index.html"><img class="logo" src="imgs/logo.jpg" alt="Logo of Fut Cup"></a>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a class="active" href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="registration-container">
+        <h1 class="page-title">Register Your Team</h1>
+        <p class="subtitle">Get ready for the top soccer tournament in KW!</p>
+
+        <!-- Registration form -->
+        <form class="registration-form" action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="team">Team Name:</label>
+            <input type="text" id="team" name="team" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="age">Age (12+):</label>
+            <input type="number" id="age" name="age" min="12" required>
+
+            <label for="position">Playing Position:</label>
+            <select id="position" name="position" required>
+                <option value="">-- choose one --</option>
+                <option>Goalkeeper</option>
+                <option>Defender</option>
+                <option>Midfielder</option>
+                <option>Forward</option>
+            </select>
+
+            <label for="category">Team Type:</label>
+            <select id="category" name="category" required>
+                <option value="">-- choose one --</option>
+                <option>Amateur</option>
+                <option>Pro</option>
+                <option>Mixed</option>
+            </select>
+
+            <label for="day">Preferred Day:</label>
+            <select id="day" name="day" required>
+                <option value="">-- choose one --</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+
+            <label class="checkbox">
+                <input type="checkbox" required> I agree to the tournament rules and conditions
             </label>
-<button class="btn-submit" type="submit">Submit Registration</button>
-</form>
-</main>
-<footer>
-<p>© 2025 FutCup. All rights reserved.</p>
-</footer>
+
+            <button type="submit" class="btn-submit">Submit Registration</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Additional Information</h3>
+            <p>At FUT CUP we want everyone to feel listened</p>
+            <p>For any suggestions or complaints feel free to email us!</p>
+            <a href="mailto:futcup@gmail.com">Email: futcup@gmail.com</a>
+        </div>
+        <div class="footer-info">
+            <h3>Our social Media!</h3>
+            <p>Follow us in our social media so you don't lose any updates!</p>
+            <ul>
+                <li>Facebook - FUTCUP FB</li>
+                <li>Instagram - @the_real_futcup</li>
+                <li>TikTok - @futcupofficial</li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46381.52856807981!2d-80.53091168403627!3d43.401157832107955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf552c0c84c7f%3A0x6e63f95a69086668!2sKitchener%20Soccer%20Club!5e0!3m2!1ses-419!2sca!4v1753900646662!5m2!1ses-419!2sca" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
 </body>
 </html>
