@@ -1,1 +1,543 @@
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+header {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgb(171, 171, 171);
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    background-color: #363636;
+    padding: 0;
+}
+
+.nav-bar li {
+    padding: 10px 15px;
+}
+
+.nav-bar li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+nav li:hover a {
+    color: black;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero-image {
+    background-image: url('imgs/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    height: 60vh;
+    padding: 40px;
+}
+
+#hero-image h1 {
+    margin: 0;
+}
+
+#hero-image span {
+    color: #33FF00;
+}
+
+#cta-register-info span {
+    font-weight: bold;
+}
+
+.yellow-card {
+    background-color: #FFE25F;
+}
+
+.red-card {
+    background-color: #FF6B6B;
+}
+
+#tournament-main-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    gap: 20px;
+    min-height: 35vh;
+    justify-content: space-between;
+    height: auto;
+}
+
+#cta-register-info {
+    flex-grow: 1;
+    border: 1px solid rgb(190, 190, 190);
+    text-align: center;
+    padding: 0px 20px;
+    max-width: 600px;
+    box-shadow: 2px 2px 5px rgb(193, 193, 193);
+}
+
+#color-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.card {
+    padding: 5px 10px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgb(193, 193, 193)
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card h2, h3 {
+    margin: 5px 0;
+}
+
+.card h2{
+    font-size: 30px;
+}
+
+#btn-register {
+    display: inline-block;
+    background-color: #00a50e;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#btn-register:hover {
+    background-color: #007e0a;
+}
+
+#cta-register-info p {
+    margin: 10px;
+}
+
+footer {
+    background-color: #008A0C;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.footer-info iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-info a{
+    color: white;
+}
+
+#statistics-title {
+    background-image: linear-gradient(90deg, #E65100, #C2185B, #0D47A1);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#statistics-title h1{
+    
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 60%;
+    
+}
+
+.place-cards img {
+    width: 200px;
+}
+
+#podium-places {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.place-cards {
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-place {
+    margin-top: 50px;
+}
+
+#third-place {
+    margin-top: 50px;
+}
+
+#position-title {
+    text-align: center;
+}
+
+#statistics-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#teams-statistics tr:nth-child(even){
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#teams-statistics th:first-child, td:first-child {
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+#teams-statistics {
+    min-width: 800px;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 30px;
+}
+
+#teams-statistics th {
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+#teams-statistics th, td {
+    padding: 20px;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px 0px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-image {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #tournament-main-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #color-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 70%;
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-info {
+        width: 70%;
+    }
+
+    #statistics-title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #podium-places {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .place-cards, #second-place, #third-place {
+        margin: 10px;
+    }
+
+    #first-place {
+        order: 1;
+    }
+
+    #second-place {
+        order: 2;
+    }
+
+    #third-place {
+        order: 3;
+    }
+
+    #statistics-table {
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+/* wrapper for the registration block */
+.registration-container {
+    max-width: 600px; 
+    margin: 60px auto;
+    background-color: #f7f7f7; 
+    padding: 30px 30px 35px; /* padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+}
+
+/* Main heading */
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px; 
+}
+
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #333333; 
+    font-weight: 500; 
+}
+
+/* The actual form section */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* simple spacing between elements */
+}
+
+    /* Label styles */
+    .registration-form label {
+        font-weight: bold;
+        margin-bottom: 6px; /* maybe too much, let's see */
+    }
+
+    /* Input fields and selects */
+    .registration-form input,
+    .registration-form select {
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        font-size: 0.95rem;
+        
+    }
+
+/* Checkbox section */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 15px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+    /* Hover effect */
+    .btn-submit:hover {
+        background-color: #218838;
+    }
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+    .registration-container {
+        margin: 20px; /* tighter margins for small screens */
+        padding: 20px; /* adjusted padding to fit better */
+        box-shadow: none; 
+    }
+
+    .page-title {
+        font-size: 1.6rem; 
+    }
+}
+/* ===== Schedule Page Styles ===== */
+
+.schedule-table-section {
+    max-width: 980px;
+    margin: 36px auto 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+    padding: 36px 32px 36px 32px;
+}
+
+.schedule-banner-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+.schedule-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.08rem;
+    min-width: 540px;
+    background: #fdfbfb;
+}
+
+.schedule-table-section caption {
+    font-size: 1.23rem;
+    margin-bottom: 9px;
+    color: #008A0C;
+    text-align: center;
+    font-weight: bold;
+}
+
+.schedule-table-section th, 
+.schedule-table-section td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+}
+.schedule-table-section th {
+    background: #008A0C;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.schedule-table-section tbody tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.schedule-table-section tbody tr:hover {
+    background: #e7ffe5;
+}
+
+.schedule-facts {
+    margin-top: 30px;
+    background: #f6fbe7;
+    border-radius: 8px;
+    padding: 20px 18px;
+    box-shadow: 0 1px 6px rgba(34, 139, 34, 0.07);
+}
+.schedule-facts h3 {
+    color: #008A0C;
+    margin-bottom: 14px;
+    font-size: 1.17rem;
+}
+
+.schedule-facts ul {
+    padding-left: 20px;
+    color: #474747;
+    margin: 0;
+}
+
+.main-heading {
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    font-size: 2.4rem;
+    color: #008A0C;
+    margin: 0;
+}
+
+/* Accessibility helpers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    padding: 0;
+}
+
+/* Responsive: Table scroll & font resize */
+@media (max-width: 768px) {
+    .schedule-table-section {
+        padding: 16px 4px;
+    }
+    .schedule-banner-img {
+        height: 120px;
+    }
+    .schedule-table-section table,
+    .schedule-table-section th,
+    .schedule-table-section td {
+        font-size: 0.98rem;
+    }
+    .main-heading {
+        font-size: 1.6rem;
+    }
+}
 
