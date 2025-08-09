@@ -9,10 +9,18 @@ header {
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 5px rgb(171, 171, 171);
+    position: sticky;
+    z-index: 1000;
+    animation: fadeInDown 0.8s ease-in-out;
 }
 
-.logo {
+header .logo {
+    transition: transform 0.3s ease;
     width: 80px;
+}
+
+header .logo:hover {
+    transform: scale(1.1) rotate(3deg);
 }
 
 .nav-bar {
@@ -326,170 +334,12 @@ footer {
     background-color: #218838;
 }
 
-@media (max-width:768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0px 0px;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    .nav-bar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #hero-image {
-        text-align: center;
-        justify-content: center;
-    }
-
-    #tournament-main-info {
-        align-items: center;
-        justify-content: center;
-    }
-
-    #color-cards {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .card {
-        width: 70%;
-        height: 300px;
-    }
-
-    footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .footer-info {
-        width: 70%;
-    }
-
-    #statistics-title {
-        justify-content: center;
-        text-align: center;
-    }
-
-    #podium-places {
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .place-cards, #second-place, #third-place {
-        margin: 10px;
-    }
-
-    #first-place {
-        order: 1;
-    }
-
-    #second-place {
-        order: 2;
-    }
-
-    #third-place {
-        order: 3;
-    }
-
-    #statistics-table {
-        overflow-x: auto;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .registration-container {
-        margin: 20px; /* tighter margins for small screens */
-        padding: 20px; /* adjusted padding to fit better */
-        box-shadow: none; 
-    }
-
-    .page-title {
-        font-size: 1.6rem; 
-    }
-
-}
-
-
-
 
 
 /* For shedule page */
-/* ===== Google Font ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-/* ===== Global Reset ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f0fff4, #ffffff);
-    color: #222;
-    line-height: 1.6;
-}
-
-/* ===== Header ===== */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #77f777, #093d0d);
-    padding: 15px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    animation: fadeInDown 0.8s ease-in-out;
-}
-
-header .logo {
-    height: 60px;
-    transition: transform 0.3s ease;
-}
-
-header .logo:hover {
-    transform: scale(1.1) rotate(3deg);
-}
-
-.nav-bar {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-bar li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.nav-bar li a:hover {
-    background: rgba(255,255,255,0.2);
-    transform: scale(1.05);
 }
 
 /* ===== Page Title ===== */
@@ -594,34 +444,6 @@ header .logo:hover {
     font-size: 0.95rem;
 }
 
-/* ===== Footer ===== */
-footer {
-    background-color: #008A0C;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-.footer-info {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 20%;
-}
-
-.footer-info iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-.footer-info a{
-    color: white;
-}
-
 /* ===== Animations ===== */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -644,7 +466,100 @@ footer {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px 0px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-image {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #tournament-main-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #color-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 70%;
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-info {
+        width: 70%;
+    }
+
+    #statistics-title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #podium-places {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .place-cards, #second-place, #third-place {
+        margin: 10px;
+    }
+
+    #first-place {
+        order: 1;
+    }
+
+    #second-place {
+        order: 2;
+    }
+
+    #third-place {
+        order: 3;
+    }
+
+    #statistics-table {
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .registration-container {
+        margin: 20px; /* tighter margins for small screens */
+        padding: 20px; /* adjusted padding to fit better */
+        box-shadow: none; 
+    }
+
+    .page-title {
+        font-size: 1.6rem; 
+    }
+
     .nav-bar {
         flex-direction: column;
         align-items: flex-start;
@@ -661,5 +576,5 @@ footer {
     .table-responsive {
         padding: 15px;
     }
-}
 
+}
